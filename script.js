@@ -40,8 +40,8 @@ const apiProfile = user => {
            fetch(`https://api.github.com/users/${user.toLowerCase()}/repos`)
            .then(response => response.json()
                .then(repository => {
-                    this.qtd_repositorio = Object.keys(repository).length
-                   return renderHtml(data['avatar_url'], data['id'], data['login'], data['bio'], data['followers'], data['following'], data['html_url'], qtd_repositorio);
+                    const qtd_repositorio = Object.keys(repository).length
+                    return renderHtml(data['avatar_url'], data['id'], data['login'], data['bio'], data['followers'], data['following'], data['html_url'], qtd_repositorio);
                })
            )
        })    
