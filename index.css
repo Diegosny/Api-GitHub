@@ -1,0 +1,26 @@
+#jumbotron {
+	border:solid 1px #000;
+    padding: 13px;
+    box-shadow: 0px 0px 3px 0px #000;
+}
+
+#img_avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 9vw;
+}
+
+#header_avatar {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#titulo_avatar {
+	margin-left: 25px;
+	margin-top:10px;
+}
+
+#link_git:hover {
+    color:#555 !important;
+}
